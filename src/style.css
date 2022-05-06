@@ -33,9 +33,30 @@ h3 {
 }
 .CurrentWeather {
   padding: 30px 0 0 20px;
+  margin-top: 40px;
+}
+.CurrentWeather img {
+  height: 64px;
+  width: 64px;
+  float: left;
+  position: relative;
+  top: -13px;
+  right: 40px;
 }
 .temperature {
-  padding: 74px 0 0 0;
+  padding: 25px 0 0 0;
+  position: relative;
+  top: 20px;
+}
+.temperature strong {
+  color: blue;
+  font-size: 64px;
+  font-weight: 400;
+}
+.temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -32px;
 }
 .emojis {
   text-align: center;
@@ -61,4 +82,12 @@ h3 {
 .wind {
   font-size: small;
   line-height: 0%;
+}
+.weatherCondition {
+  position: relative;
+  margin-top: 4px;
+  padding: 0 auto;
+  float: left;
+  top: -40px;
+  right: -15px;
 }
