@@ -1,3 +1,24 @@
+hr {
+  border-top: 3px solid #dadde1;
+}
+img {
+  width: 90px;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+h1 {
+  font-size: 34px;
+}
+h2 {
+  font-size: 26px;
+  font-weight: 100 bold;
+  line-height: 29px;
+}
+h3 {
+  font-size: 18px;
+}
 .container {
   border: 1px solid #dadde1;
   padding: 20px;
@@ -18,12 +39,6 @@
 }
 .emojis {
   text-align: center;
-}
-hr {
-  border-top: 3px solid #dadde1;
-}
-img {
-  width: 90px;
 }
 .DayTime {
   text-align: center;
@@ -46,18 +61,4 @@ img {
 .wind {
   font-size: small;
   line-height: 0%;
-}
-body {
-  font-family: "Courier New", Courier, monospace;
-}
-h1 {
-  font-size: 34px;
-}
-h2 {
-  font-size: 26px;
-  font-weight: 100 bold;
-  line-height: 29px;
-}
-h3 {
-  font-size: 18px;
 }
