@@ -33,7 +33,7 @@ h3 {
 }
 .CurrentWeather {
   padding: 30px 0 0 20px;
-  margin-top: 40px;
+  margin-top: 55px;
 }
 .CurrentWeather img {
   height: 64px;
@@ -46,7 +46,7 @@ h3 {
 .temperature {
   padding: 25px 0 0 0;
   position: relative;
-  top: 20px;
+  top: 30px;
 }
 .temperature strong {
   color: blue;
