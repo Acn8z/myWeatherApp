@@ -23,7 +23,6 @@ let h3 = document.querySelector("h3");
 h3.innerHTML = `${day} ${date} ${hours}:${minutes}`;
 
 function displayTemperature(response) {
-  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   let cityElement = document.querySelector("#city");
@@ -43,7 +42,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "c0603e8f3a85d5a92fb1120b28a278b4";
-let city = "Paris";
+let city = "Miami";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
