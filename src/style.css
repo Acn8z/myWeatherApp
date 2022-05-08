@@ -15,9 +15,11 @@ h2 {
   font-size: 26px;
   font-weight: 100 bold;
   line-height: 29px;
+  margin-top: 20px;
 }
 h3 {
   font-size: 18px;
+  margin-top: 20px;
 }
 ul {
   font-size: small;
@@ -28,6 +30,7 @@ ul {
   position: relative;
   right: -30px;
   line-height: 25px;
+  margin-top: 20px;
 }
 .container {
   border: 1px solid #dadde1;
@@ -49,7 +52,7 @@ ul {
   height: 30px;
   width: 30px;
   position: relative;
-  bottom: -85px;
+  bottom: -95px;
   left: -70px;
 }
 .temperature {
