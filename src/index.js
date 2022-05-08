@@ -7,31 +7,22 @@ let minutes = now.getMinutes();
 let h3 = document.querySelector("h3");
 h3.innerHTML = `${day} ${date} ${hours}:${minutes}`;
 
-function displayWeatherCondition(response) {
-  document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperatureConvert").innerHTML = Math.round(
-    response.data.main.temp
-  );
+function displayTemperature(response) {
+  console.log(response.data);
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  let cityElement = document.querySelector("#city");
+  cityElement.innerHTML = response.data.name;
+  let descriptionElement = document.querySelector("#weatherDescription");
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = response.data.main.humidity;
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
-function searchCity(event) {
-  event.preventDefault();
-  let apiKey = "c0603e8f3a85d5a92fb1120b28a278b4";
-  let city = document.querySelector("#search-text-input").value;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayWeatherCondition);
-}
+let apiKey = "c0603e8f3a85d5a92fb1120b28a278b4";
+let city = "Miami";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-let form = document.querySelector("#search-form");
-form.addEventListener("submit", searchCity);
-
-function celsiusTemperature(event) {
-  celsius.innerHTML = "10℃";
-}
-function fahrenheitTemperature(event) {
-  celsius.innerHTML = "40℉";
-}
-let celsius = document.querySelector("#celsius-link");
-let fahrenheit = document.querySelector("#fahrenheit-link");
-celsius.addEventListener("click", celsiusTemperature);
-fahrenheit.addEventListener("click", fahrenheitTemperature);
+axios.get(apiUrl).then(displayTemperature);

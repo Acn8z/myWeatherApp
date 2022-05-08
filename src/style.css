@@ -31,6 +31,8 @@ ul {
   right: -30px;
   line-height: 25px;
   margin-top: 20px;
+  padding: 0;
+  line-height: 1.5;
 }
 .container {
   border: 1px solid #dadde1;
@@ -89,6 +91,7 @@ ul {
   float: left;
   top: 60px;
   right: -30px;
+  text-transform: capitalize;
 }
 .units {
   margin-top: 40px;
@@ -100,4 +103,8 @@ ul {
 }
 .weatherTemperature {
   margin-top: 60px;
+}
+.extraInfo {
+  margin-top: 0;
+  line-height: 1.5;
 }
