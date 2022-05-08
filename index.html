@@ -44,26 +44,28 @@
           </div>
         </form>
         <div class="row justify-content-between">
-          <div class="col-4">
-            <div class="CurrentWeather">
-              <p class="weatherCondition">Clear</p>
-              <img src="src/moon.jpg" />
-              Humidity:<span id="humidity">78</span>% Wind:<span id="wind"
-                >8</span
-              >km/h
-            </div>
+          <div class="col-4" id="currentWeather">
+            <p class="weatherCondition">Clear</p>
+            <div class="currentWeatherIcon"><img src="src/moon.jpg" /></div>
           </div>
           <div class="col-4">
             <div class="temperature" id="temperatureConvert">
               <strong>12</strong>
               <span class="units"> ℃|℉ </span>
             </div>
-            <p class="secondtemp">Feels like -1℃</p>
-            <p class="firstmax"><strong>12℃</strong>|-1℃</p>
           </div>
         </div>
         <div class="row justify-content-start">
-          <div class="col-4"></div>
+          <div class="col-4">
+            <ul>
+              <li>
+                <span class="humidityPercentage" id="humidity">Humidity:</span>
+              </li>
+              <li>
+                <span class="windSpeed" span id="wind">Wind: </span>
+              </li>
+            </ul>
+          </div>
           <div class="col-4">
             <h2 class="city" id="city"><strong>Rome</strong></h2>
             <h3 class="DayTime" id="DateAndTime">Sunday 19:41</h3>
