@@ -91,6 +91,8 @@ ul {
   float: left;
   top: 60px;
   right: -30px;
+}
+.weatherCondition:first-letter {
   text-transform: capitalize;
 }
 .units {
@@ -104,7 +106,7 @@ ul {
 .weatherTemperature {
   margin-top: 60px;
 }
-.extraInfo {
-  margin-top: 0;
-  line-height: 1.5;
+
+li:first letter {
+  text-transform: capitalize;
 }
