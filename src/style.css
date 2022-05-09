@@ -55,7 +55,7 @@ ul {
   width: 64px;
   margin-top: 100px;
   position: relative;
-  left: -75px;
+  left: -70px;
 }
 .temperature strong {
   font-size: 64px;
@@ -99,7 +99,7 @@ ul {
   margin-top: 40px;
 }
 .weatherTemperature strong {
-  color: rgb(128, 14, 14);
+  color: rgb(26, 3, 3);
   font-size: 62px;
   font-weight: 400;
 }
