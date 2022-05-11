@@ -117,6 +117,15 @@ li:first letter {
   cursor: default;
   text-decoration: none;
 }
-.active {
-  text-decoration: none;
+.weather-forecast {
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+}
+.weather-forecast-temperature-max {
+  font-size: 13px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }
