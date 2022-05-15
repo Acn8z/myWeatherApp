@@ -130,3 +130,6 @@ li:first letter {
   opacity: 0.5;
   font-size: 15px;
 }
+.feelsLikeTemp {
+  font-size: small;
+}
