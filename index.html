@@ -16,6 +16,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -53,7 +54,8 @@
           <div class="col-4">
             <div class="float-left">
               <div class="weatherTemperature">
-                <strong id="temperature"></strong><span class="units">℉</span>
+                <strong class="temperature" id="temperature"></strong
+                ><span class="units">℉</span>
               </div>
             </div>
             <div class="feelsLikeTemp">
@@ -79,8 +81,8 @@
         <hr />
         <div class="weather-forecast" id="forecast"></div>
       </div>
-      <a href="https://github.com/Acn8z/myWeatherApp">Open Source Code</a> by
-      Andreea Nasca
+      <a href="https://github.com/Acn8z/myWeatherApp">Open-Source Code</a>
+      <span class="coder">by Andreea Nasca</span>
     </div>
     <script src="src/index.js"></script>
   </body>
