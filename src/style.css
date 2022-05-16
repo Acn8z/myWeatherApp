@@ -38,6 +38,9 @@ ul {
 a {
   color: wheat;
 }
+a:hover {
+  background-color: white;
+}
 .container {
   border: 1px solid #dadde1;
   padding: 20px;
